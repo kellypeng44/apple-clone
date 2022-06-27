@@ -21,6 +21,7 @@ nav {
 }
 
 .icon a {
+    /* To make the inline element (a, span etc) to behave like a box model element (div, p, h1 etc), in other words, to make the a tag behave like a div tag. */
     display:block; 
     line-height:0;
     padding: 0 5px;
