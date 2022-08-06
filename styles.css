@@ -1,3 +1,13 @@
+:root {
+    /* footer */
+    --footer-background: #f5f5f7;
+    --footer-border-color: #d2d2d7;
+    --footer-text-color: #6e6e73;
+    --footer-link-color: #424245;
+    --footer-directory-title-color: #1d1d1f;
+    --footer-directory-title-color-hover: #000;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -57,6 +67,35 @@ nav li a:hover {
     color: #fff;
 }
 
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    font-size:14px;
+    line-height:1.42859;
+    font-weight:400;
+    letter-spacing:-.016em;
+    font-family:"SF Pro Text","Myriad Set Pro","SF Pro Icons","Apple Legacy Chevron","Helvetica Neue","Helvetica","Arial",sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom:56px;
+    width: 100vw;
+    background: var(--footer-background);
+    color: var(--footer-text-color);
+}
+
+footer a {
+    color: var(--footer-link-color);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer .ft-footer-shop a {
+    color: #06c;
+}
 
 @media (max-width: 833px) {
 
